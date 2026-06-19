@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hailey Wong - 12 Month Review Journey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Hailey's IBM 12 Month Review</h1>
+        <p class="subtitle">bp Global PMO, Placement Intern | June 2025 - June 2026</p>
+    </header>
+
+    <!-- Office Environment Container -->
+    <div class="office-container">
+        <!-- Office Background Layers -->
+        <div class="office-background">
+            <!-- Background Photos -->
+            <div class="background-photos">
+                <img src="main screen photos/laptop.jpg" alt="IBM Memory" class="bg-photo" style="left: 5%; top: 25%; width: 320px;">
+                <img src="main screen photos/lift.jpg" alt="IBM Memory" class="bg-photo" style="right: 8%; top: 10%; width: 320px;">
+                <img src="main screen photos/sunset.jpg" alt="IBM Memory" class="bg-photo" style="left: 3%; top: 55%; width: 320px;">
+                <img src="main screen photos/growth day.jpg" alt="IBM Memory" class="bg-photo" style="right: 5%; top: 45%; width: 290px;">
+                <img src="main screen photos/Volunteering.jpeg" alt="IBM Memory" class="bg-photo" style="left: 7%; top: 82%; width: 320px;">
+                <img src="main screen photos/umbrella.jpeg" alt="IBM Memory" class="bg-photo" style="right: 6%; top: 80%; width: 280px;">
+            </div>
+            
+            <!-- Walking Path -->
+            <svg class="path-line" viewBox="0 0 1200 2000" preserveAspectRatio="xMidYMid meet">
+                <path id="walkingPath"
+                      d="M 100 100 Q 300 150, 400 250 T 600 400 Q 800 500, 700 650 T 500 850 Q 300 950, 400 1100 T 700 1300 Q 900 1400, 800 1550 T 600 1750"
+                      stroke="#0f62fe"
+                      stroke-width="4"
+                      fill="none"
+                      stroke-dasharray="8,4"
+                      opacity="0.4"/>
+            </svg>
+        </div>
+
+        <!-- Walking Avatar -->
+        <div class="avatar-container" id="avatarContainer">
+            <div class="avatar-character" id="avatar">
+                <!-- Avatar will be styled with CSS to look like Hailey -->
+                <div class="avatar-head">
+                    <div class="avatar-hair"></div>
+                    <div class="avatar-face">
+                        <div class="avatar-eyes"></div>
+                        <div class="avatar-smile"></div>
+                    </div>
+                </div>
+                <div class="avatar-body">
+                    <div class="avatar-arms">
+                        <div class="avatar-arm-left"></div>
+                        <div class="avatar-arm-right"></div>
+                    </div>
+                    <div class="avatar-torso">
+                        <div class="vest-button vest-button-top"></div>
+                        <div class="vest-button vest-button-bottom"></div>
+                        <div class="ibm-badge"></div>
+                    </div>
+                </div>
+                <div class="avatar-legs">
+                    <div class="avatar-leg-left"></div>
+                    <div class="avatar-leg-right"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Milestone Location Pins -->
+        <div class="milestone-pin" id="milestone-1" data-position="0">
+            <div class="pin-marker">
+                <div class="pin-icon">🏁</div>
+            </div>
+            <div class="pin-label">Start of Journey</div>
+        </div>
+
+        <div class="milestone-pin" id="milestone-2" data-position="1">
+            <div class="pin-marker">
+                <div class="pin-icon">🚀</div>
+            </div>
+            <div class="pin-label">Client Projects</div>
+        </div>
+
+        <div class="milestone-pin" id="milestone-3" data-position="2">
+            <div class="pin-marker">
+                <div class="pin-icon">📚</div>
+            </div>
+            <div class="pin-label">Learning & Growth</div>
+        </div>
+
+        <div class="milestone-pin" id="milestone-4" data-position="3">
+            <div class="pin-marker">
+                <div class="pin-icon">💪</div>
+            </div>
+            <div class="pin-label">Overcoming Challenges</div>
+        </div>
+
+        <div class="milestone-pin" id="milestone-5" data-position="4">
+            <div class="pin-marker">
+                <div class="pin-icon">⭐</div>
+            </div>
+            <div class="pin-label">Key Achievements</div>
+        </div>
+
+        <div class="milestone-pin" id="milestone-6" data-position="5">
+            <div class="pin-marker">
+                <div class="pin-icon">🤝</div>
+            </div>
+            <div class="pin-label">Collaboration & Feedback</div>
+        </div>
+
+        <div class="milestone-pin" id="milestone-7" data-position="6">
+            <div class="pin-marker">
+                <div class="pin-icon">🌟</div>
+            </div>
+            <div class="pin-label">Extra Curricular</div>
+        </div>
+
+        <div class="milestone-pin" id="milestone-8" data-position="7">
+            <div class="pin-marker">
+                <div class="pin-icon">🎯</div>
+            </div>
+            <div class="pin-label">Goals Achieved</div>
+        </div>
+
+        <div class="milestone-pin" id="milestone-9" data-position="8">
+            <div class="pin-marker">
+                <div class="pin-icon">🚀</div>
+            </div>
+            <div class="pin-label">Future Plans</div>
+        </div>
+    </div>
+
+    <!-- Modal for milestone content -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+            <button class="modal-next-btn" id="modalNext">
+                Next <span>→</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Goodbye Modal -->
+    <div class="goodbye-modal" id="goodbyeModal">
+        <div class="goodbye-content">
+            <div class="goodbye-avatar">
+                <div class="goodbye-face">👋</div>
+            </div>
+            <h2>See you soon! 👋</h2>
+            <p>Thank you for exploring my IBM journey!</p>
+            <button class="goodbye-close-btn" id="goodbyeClose">Close</button>
+        </div>
+    </div>
+
+    <!-- Navigation Controls -->
+    <div class="controls">
+        <button class="control-btn" id="startJourney">▶ Start Journey</button>
+        <button class="control-btn" id="resetJourney">↺ Reset</button>
+        <div class="progress-indicator">
+            <span id="progressText">Ready to begin</span>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
